@@ -1,0 +1,19 @@
+set path="C:\Program Files\Java\jdk-20\bin"
+public class Simple
+{
+ public static void main(String[] args)
+ {
+  System.out.println("Programowanie to świetna zabawa!");
+ }
+}
+
+javac Dane.java
+java Dane.java
+
+public class Dane
+{
+ public static void main(String[] args)
+ {
+  System.out.println("Maksymilian Mazgaj Programowanie");
+ }
+}
