@@ -26,3 +26,14 @@ public class Miesiac
   System.out.println("Mój numer z dziennika "+nr);
  }
 }
+public class Rafal
+{
+ public static void main(String[] args)
+ {
+  final int day = 17;
+  final int month = 10;
+  final int year = 2007;
+  final String place = "Gdańsk";
+  System.out.println("Urodziłem się w "+place+" dnia "+day+month+year);
+ }
+}
