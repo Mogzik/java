@@ -17,3 +17,12 @@ public class Dane
   System.out.println("Maksymilian Mazgaj Programowanie");
  }
 }
+
+public class Miesiac
+{
+ public static void main(String[] args)
+ {
+  int nr = 19;
+  System.out.println("Mój numer z dziennika "+nr);
+ }
+}
