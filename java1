@@ -37,3 +37,25 @@ public class Rafal
   System.out.println("Urodziłem się w "+place+" dnia "+day+month+year);
  }
 }
+
+public class im
+{
+ public static void main(String[] args)
+ {
+String imie = "Maks";
+String nazwisko = "Mazgaj";
+String miasto = "Gdańsk";
+
+int sm1 = imie.length();
+int sm2 = nazwisko.length();
+int sm3 = miasto.length();
+
+int dod = sm1 + sm2 + sm3;
+int mnz = sm1 * sm2 * sm3;
+  System.out.println("sm1= "+sm1);
+  System.out.println("sm2= "+sm2);
+  System.out.println("sm3= "+sm3);
+  System.out.println("Dodawanie= "+dod);
+  System.out.println("Monzenie= "+mnz);
+ }
+}
