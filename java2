@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class z2
+{
+ public static void main(String[] args)
+ {
+Scanner scan=new Scanner(System.in);
+System.out.println("Długość rzędu w metrach");
+Double R = scan.nextDouble();
+
+Scanner scan1=new Scanner(System.in);
+System.out.println("Ilość miejsca zajętego przez okratowanie");
+double E = scan1.nextDouble();
+
+Scanner scan2=new Scanner(System.in);
+System.out.println("Odległść między sadzonkami w metrach");
+double S = scan2.nextDouble();
+
+double V1 = R - 2*E;
+double V = V1/S;
+System.out.println("Liczba sadzonek mieszczących się w rzędzie to "+V);
+ }
+}
