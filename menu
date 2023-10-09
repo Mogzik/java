@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+ 
+
+public class menu {
+
+ 
+
+   public static void main(String[] args) {
+
+       Scanner scanner = new Scanner(System.in);
+
+ 
+
+       System.out.println("Menu Restauracji:");
+
+       System.out.println("1. Kawa");
+
+       System.out.println("2. Herbata");
+
+       System.out.println("3. Lemoniada");
+
+ 
+
+       System.out.println("Wybierz numer dania z menu (1-3):");
+
+       int wybor = scanner.nextInt();
+
+ 
+
+       switch (wybor) {
+
+           case 1:
+
+               System.out.println("Kawa - 15 zł");
+
+               System.out.println("Opis: Kawa elegancka mleko i tak dalej.");
+
+               break;
+
+           case 2:
+
+               System.out.println("Herbata - 13 zł");
+
+               System.out.println("Opis: Herbata też całkiem fajna owoce w środku.");
+
+               break;
+
+           case 3:
+
+               System.out.println("Lemoniada - 11 zł");
+
+               System.out.println("Opis: Lemoniada może być z cytrynką i lodem.");
+
+               break;
+
+
+           default:
+
+               System.out.println("Błąd: Wybierz numer z menu (1-3).");
+
+               break;
+
+       }
+
+   }
+
+}
