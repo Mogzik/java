@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class liczba {
+
+ 
+
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       int iloscProb = 7;
+
+ 
+
+       System.out.println("Pierwszy użytkownik, podaj dowolną liczbę z zakresu 1-100:");
+       int wylosowanaLiczba = scanner.nextInt();
+
+ 
+
+       boolean zgadnieto = false;
+
+ 
+
+       for (int i = 1; i <= iloscProb; i++) {
+           System.out.println("Drugi użytkownik, próba " + i + ": Zgadnij liczbę:");
+           int zgadnietaLiczba = scanner.nextInt();
+
+ 
+
+           if (zgadnietaLiczba == wylosowanaLiczba) {
+			   JOptionPane.showMessageDialog(null,"Brawo! Zgadłeś liczbę " + wylosowanaLiczba + " za " + i + " razem!");
+               zgadnieto = true;
+               break;
+           }
+       }
+
+ 
+
+       if (!zgadnieto) {
+
+		    JOptionPane.showMessageDialog(null,"Niestety, nie zgadłeś liczby " + wylosowanaLiczba + " w 7 próbach.");
+       }
+   }
+}
