@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class z6 {
+    public static void main(String[] args) {
+
+double roczny,podatek;
+Scanner klawiatura = new Scanner(System.in);
+System.out.println("Podaj dochód roczny: ");
+roczny = klawiatura.nextDouble();
+
+if(roczny<=20000)
+{
+podatek = roczny * 0.1;
+System.out.println("Podatek wynosi: "+podatek);
+}
+else if (roczny>20000 && roczny<40000)
+{
+podatek = roczny * 0.15;
+System.out.println("Podatek wynosi: "+podatek);
+}
+else if (roczny>40000 && roczny<60000)
+{
+podatek = roczny * 0.2;
+System.out.println("Podatek wynosi: "+podatek);
+}
+else if (roczny>60000)
+{
+podatek = roczny * 0.25;
+System.out.println("Podatek wynosi: "+podatek);
+}
+    }
+}
