@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+ 
+
+public class imie {
+
+ 
+
+   public static void main(String[] args) {
+       String imieUcznia = "Adam";
+       Scanner scanner = new Scanner(System.in);
+       int iloscProb = 5;
+
+ 
+
+       System.out.println("Witaj w grze 'Zgadnij kto?'");
+       System.out.println("Spróbuj zgadnąć imię ucznia z klasy.");
+       System.out.println("Masz 5 prób.");
+
+ 
+
+       for (int i = 0; i < iloscProb; i++) {
+           System.out.print("Podaj imię: ");
+           String propozycja = scanner.nextLine();
+
+ 
+
+           if (propozycja.equalsIgnoreCase(imieUcznia)) {
+               System.out.println("Brawo! Zgadłeś imię ucznia - to " + imieUcznia + "!");
+               break;
+           } else {
+               System.out.println("Nieprawidłowa odpowiedź. Pozostało " + (iloscProb - i - 1) + " prób.");
+           }
+       }
+
+ 
+
+       System.out.println("Koniec gry. Imię ucznia to " + imieUcznia + ".");
+   }
+}
