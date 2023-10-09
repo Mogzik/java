@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class z3 {
+    public static void main(String[] args) {
+
+double sadzonki;
+String input = JOptionPane.showInputDialog("Podaj długość rzędu w metrach");
+double metry = Integer.parseInt(input);
+String input1 = JOptionPane.showInputDialog("Podaj długość miejsca zajmowanego przez ogrodzenie w metrach");
+double metryO = Integer.parseInt(input1);
+String input2 = JOptionPane.showInputDialog("Podaj odległość między sadzonkami w metrach");
+double metryS = Integer.parseInt(input2);
+sadzonki=(metry-2*metryO)/2;
+JOptionPane.showMessageDialog(null,"Rząd - "+metry+" Ogrodzenie - "+metryO+" Odległość między sadzonkami - "+metryS+" W rzędzie można umieścić: "+sadzonki+" sadzonek");
+    }
+}
