@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+ 
+
+public class z1 {
+
+ 
+
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+ 
+
+       System.out.println("Podaj pierwszą liczbę:");
+       double liczba1 = scanner.nextDouble();
+
+ 
+
+       System.out.println("Podaj operator matematyczny (+, -, *, /):");
+       char operator = scanner.next().charAt(0);
+
+ 
+
+       System.out.println("Podaj drugą liczbę:");
+       double liczba2 = scanner.nextDouble();
+
+ 
+
+       double wynik = 0;
+
+ 
+
+       switch (operator) {
+           case '+':
+               wynik = liczba1 + liczba2;
+               break;
+           case '-':
+               wynik = liczba1 - liczba2;
+               break;
+           case '*':
+               wynik = liczba1 * liczba2;
+               break;
+           case '/':
+               if (liczba2 != 0) {
+                   wynik = liczba1 / liczba2;
+               } else {
+                   System.out.println("Błąd: Nie można dzielić przez zero.");
+                   return;
+               }
+               break;
+           default:
+               System.out.println("Błąd: Nieprawidłowy operator.");
+               return;
+       }
+
+ 
+
+       System.out.println("Wynik: " + wynik);
+   }
+}
