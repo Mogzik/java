@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class z4 {
+    public static void main(String[] args) {
+
+double wynik, l1, l2;
+Scanner klawiatura = new Scanner(System.in);
+System.out.println("Podaj 1 liczbę: ");
+l1 = klawiatura.nextDouble();
+System.out.println("Podaj 2 liczbę: ");
+l2 = klawiatura.nextDouble();
+wynik=l1+l2;
+System.out.println("Wynik wynosi: "+wynik);
+    }
+}
